@@ -36,7 +36,7 @@ console.log(obj.__proto__ === Object.prototype);*/
 
 
 /*-----------Animal-----------*/
-function Animal(){
+/*function Animal(){
   
 }
 Animal.prototype = {
@@ -45,7 +45,7 @@ Animal.prototype = {
   }
 
 /*-----------bird-----------*/
-function bird(){
+/*function bird(){
 
 }
 bird.prototype = {
@@ -56,7 +56,7 @@ bird.prototype = {
 bird.prototype.__proto__ === Animal.prototype;
 
 /*-----------cat-----------*/
-function cat(){
+/*function cat(){
 
 }
 cat.prototype = {
@@ -67,7 +67,7 @@ cat.prototype = {
 cat.prototype.__proto__ === Animal.prototype;  
 
 /*-----------pig-----------*/
-function pig(){
+/*function pig(){
 
 }
 pig.prototype = {
@@ -78,7 +78,7 @@ pig.prototype = {
 pig.prototype.__proto__ === bird.prototype;
 
 /*-----------fish-----------*/
-function fish(){
+/*function fish(){
 
 }
 fish.prototype = {
@@ -89,7 +89,7 @@ fish.prototype = {
 fish.prototype.__proto__ === bird.prototype;
 
 /*-----------dog-----------*/
-function dog(){
+/*function dog(){
 
 }  
 dog.prototype = {
@@ -97,10 +97,10 @@ dog.prototype = {
         console.log('Move');
     }
 }
-dog.prototype.__proto__ === cat.prototype;
+dog.prototype.__proto__ === cat.prototype;*/
 
 /*-----------moneky-----------*/
-function moneky(){
+/*function moneky(){
 
 }
 moneky.prototype = {
@@ -134,4 +134,72 @@ console.log(d);
 d.run();
 
 var a = new Object.create(function(){},{});
-console.log(typeof a);
+console.log(typeof a);*/
+
+function animal(){
+    
+};
+animal.prototype = {
+    name : 'Name',
+    sex : 'sex', 
+    eat : function(){
+       console.log(animal.eat);
+        console.log('eat') ;
+    }
+}
+
+function bird(){
+
+};
+bird.prototype = {
+    fly : function(){
+        console.log('I can fly');
+        console.log('fly')
+    }
+}
+bird.prototype.__proto__ = animal.prototype;
+
+function rabbit(){
+    
+}; 
+rabbit.prototype = {
+    jump : function(){
+        console.log('I like jump');
+        console.log('like');
+    }
+}
+rabbit.prototype.__proto__ = animal.prototype;
+
+function dove(){
+}
+dove.prototype.__proto__ = bird.prototype;
+var a = new dove();
+
+function chicken(){
+
+}
+chicken.prototype.__proto__ = bird.prototype;
+var b = new chicken();
+
+function dog(){
+
+}
+dog.prototype.__proto__ = rabbit.prototype;
+var d = new dog();
+
+
+function shark(){
+
+}
+shark.prototype.__proto__ = rabbit.prototype;
+
+var a = new dove();
+var b = new chicken();
+var c = new shark();
+var d = new dog();
+
+c.jump();
+a.fly();
+a.eat();
+b.fly();
+d.eat();
