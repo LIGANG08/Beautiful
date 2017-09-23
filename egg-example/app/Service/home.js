@@ -5,10 +5,10 @@
 
 'use strict';
 module.exports = app => {
-  class home extends app.Service {
+  class Home extends app.Service {
     * find() {
       return 'hello!';
     }
   }
-  return home;
+  return Home;
 };
