@@ -13,5 +13,24 @@ module.exports = appInfo => {
       ignoreJSON: true,
     },
   };
+  config.mysql = {
+    // database configuration
+    client: {
+      // host
+      host: '10.0.0.253',
+      // port
+      port: '3606',
+      // username
+      user: 'root',
+      // password
+      password: '123456',
+      // database
+      database: 'test',
+    },
+    // load into app, default is open
+    app: true,
+    // load into agent, default is close
+    agent: false,
+  };
   return config;
 };

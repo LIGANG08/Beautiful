@@ -48,7 +48,7 @@ module.exports = app => {
       this.ctx.body = yield this.service.test.stest();
     }
     * heltime() {
-      this.ctx.body = this.ctx.helper1.time();
+      this.ctx.body = this.ctx.helper.time();
     }
   }
   return HomeController;

@@ -22,10 +22,16 @@ module.exports = {
     const t = new Date();
     const y = t.getFullYear();
     const mon = t.getMonth();
-    const d = t.getDay();
+    const d = t.getDate();
     const h = t.getHours();
     const min = t.getMinutes();
     const s = t.getSeconds();
-    return `${y}(年)${mon}月${d}日${h}时${min}分${s}秒`;
+    return `${y}-${this.f(mon)}-${d}-${h}:${min}-${s}`;
+    // return t;
+  },
+  f(p) {
+    if (p < 10) {
+      return '0' + p;
+    }
   },
 };

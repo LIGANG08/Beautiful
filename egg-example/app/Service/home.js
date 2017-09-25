@@ -39,6 +39,7 @@ module.exports = app => {
       const mon = t.getMonth();
       const y = t.getFullYear();
       return `${y}年-${this.fo(mon)}月-${this.fo(d)}日-${h}:${this.fo(min)}:${this.fo(s)}`;
+      // return `${y}${mon}${d}${h}${min}${s}`;
     }
     fo(p) {
       if (p < 10) {
