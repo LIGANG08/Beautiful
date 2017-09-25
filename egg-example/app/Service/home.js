@@ -4,8 +4,9 @@
  */
 
 'use strict';
+const _ = require('lodash');
 module.exports = app => {
-  const _ = require('lodash');
+  // const _ = require('lodash');
   class Home extends app.Service {
     * find() {
       return 'hello!';
@@ -46,6 +47,18 @@ module.exports = app => {
         return '0' + p;
       }
       return p;
+    }
+    * diff() {
+      const a = _.difference([ 2, 1 ], [ 2, 3 ]);
+      return a;
+    }
+    * diffB1() {
+      const a = _.differenceBy([ 2.1, 1.2 ], [ 2.3, 3.4 ], Math.floor);
+      return a;
+    }
+    * diffB2() {
+      // const a = _.differenceBy([{'x': 2 }, { 'x': 1 }], [{ 'x': 1 }], 'x');
+      // return a;
     }
   }
   return Home;

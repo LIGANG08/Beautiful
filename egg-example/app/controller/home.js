@@ -50,6 +50,27 @@ module.exports = app => {
     * heltime() {
       this.ctx.body = this.ctx.helper.time();
     }
+    * hel1() {
+      this.ctx.body = yield this.ctx.helper.find();
+    }
+    * hel2() {
+      this.ctx.body = yield this.ctx.helper.sina();
+    }
+    * hel3() {
+      const a = yield this.ctx.helper.test();
+      const b = yield this.ctx.helper.test();
+      this.ctx.body = a + b;
+    }
+    * hel4() {
+      this.ctx.body = yield this.ctx.helper.chunk();
+    }
+    * hel5() {
+      this.ctx.body = yield this.ctx.helper.concat();
+    }
+    * hel6() {
+      this.ctx.body = yield this.ctx.helper.compact();
+    }
+
   }
   return HomeController;
 };
