@@ -33,13 +33,13 @@ module.exports = app => {
     * hel() {
       /* const c = this.ctx.helper.foo(this.ctx.request.query.a);
       this.ctx.body = this.ctx.helper.foo(this.ctx.request.query.b) + c;*/
-      this.ctx.body = this.ctx.helper.foo('par');
+      this.ctx.body = this.ctx.helper.foo('foo');
     }
     * c() {
-      this.ctx.body = this.ctx.helper1.cat();
+      this.ctx.body = this.ctx.helper.cat();
     }
     * d() {
-      this.ctx.body = this.ctx.helper1.dog();
+      this.ctx.body = this.ctx.helper.dog(1, 2);
     }
     * times() {
       this.ctx.body = yield this.service.home.time();
