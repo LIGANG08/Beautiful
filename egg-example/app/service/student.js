@@ -1,6 +1,6 @@
 /**
  * 
- * 2017-09-25 ligang
+ * 2017-09-26 ligang
  */
 
 'use strict';
@@ -8,7 +8,7 @@ module.exports = app => {
   class St extends app.Service {
     * create(a) {
       try {
-        yield app.mysql.insert('Student', a);
+        yield app.mysql.insert('student', a);
       } catch (y) {
         this.ctx.logger.err(y);
         return false;
@@ -17,7 +17,7 @@ module.exports = app => {
     }
     * delete(a) {
       try {
-        yield app.mysql.delete('Student', a);
+        yield app.mysql.delete('student', a);
       } catch (y) {
         this.ctx.logger.err(y);
         return false;
@@ -26,21 +26,22 @@ module.exports = app => {
     }
     * update(a) {
       try {
-        yield app.mysql.update('Student', a);
+        yield app.mysql.update('student', a);
       } catch (y) {
         this.ctx.logger.err(y);
         return false;
       }
       return true;
     }
-    * get(a) {
+    * get() {
+      let s;
       try {
-        yield app.mysql.get('Student', a);
+        s = yield app.mysql.select('student');
       } catch (y) {
         this.ctx.logger.err(y);
         return false;
       }
-      return true;
+      return s;
     }
   }
   return St;

@@ -22,7 +22,7 @@ module.exports = app => {
       this.ctx.body = yield this.ctx.service.student.create(this.ctx.request.body);
     }
     * sdelet() {
-      this.ctx.body = yield this.ctx.service.stduent.delete(this.ctx.request.body);
+      this.ctx.body = yield this.ctx.service.student.delete(this.ctx.request.body);
     }
     * supdat() {
       this.ctx.body = yield this.ctx.service.student.update(this.ctx.request.body);

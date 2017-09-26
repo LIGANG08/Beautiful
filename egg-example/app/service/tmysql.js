@@ -36,13 +36,14 @@ module.exports = app => {
       return true;
     }
     * get(parm) {
+      let a;
       try {
-        yield app.mysql.get('user', parm);
+        a = yield app.mysql.get('user', parm);
       } catch (e) {
         this.ctx.logger.error(e);
         return false;
       }
-      return true;
+      return a;
     }
   }
   return Test;
