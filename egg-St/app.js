@@ -4,6 +4,7 @@ const knex = require('knex')({
 });
 module.exports = app => {
   app.beforeStart(function* () {
+    const ctx = app.createAnonymousContex();
     const hasUser = yield app.mysql.query(knex.schema.hasTable('stu').toString());
     if (hasUser.length === 0) {
       const userSchema = knex.schema.createTableIfNotExists('stu', function(table) {
@@ -29,6 +30,7 @@ module.exports = app => {
         table.timestamp('creat_at').defaultTo(knex.fn.now());
         table.charset('utf8');
       });
+      ctx.logger.info('some request data');// 上传日志
       yield app.mysql.query(userSchema.toString());
     }
 
