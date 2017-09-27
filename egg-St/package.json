@@ -1,13 +1,12 @@
 {
-  "name": "example",
+  "name": "St",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "dependencies": {
     "egg": "^1.8.0",
     "egg-mysql": "^3.0.0",
-    "egg-scripts": "^1.2.0",
-    "knex": "^0.13.0"
+    "egg-scripts": "^1.2.0"
   },
   "devDependencies": {
     "autod": "^2.9.0",
