@@ -1,19 +1,20 @@
 'use strict';
 
 module.exports = app => {
-  app.get('/', 'home.index');
-  app.post('/screate', 'mysql.screat');
-  app.post('/sdelete', 'mysql.sdelet');
-  app.post('/supdate', 'mysql.supdat');
-  app.post('/sget', 'mysql.sge');
-  app.post('/se', 'mysql.select');
-  app.post('/ge', 'mysql.gets');
-  app.post('/uc', 'comp.ucreat');
-  app.post('/ud', 'comp.udelet');
-  app.post('/uu', 'comp.uupdat');
-  app.post('/ug', 'comp.uge');
-  app.post('/wc', 'comp.wcreat');
-  app.post('/wd', 'comp.wdelet');
-  app.post('/wu', 'comp.wupdat');
-  app.post('/wg', 'comp.wge');
+  // app.post('/user/register', 'user.register');
+  // app.post('/user/login', 'user.login');
+
+  // app.post('/mobile/mobile', 'mobile.mobile');
+  // app.post('/mobile/updata', 'mobile.updata');
+
+  // app.post('/works/updata', 'works.updata');
+  // app.post('/works/vote', 'works.vote');
+  // app.post('/works/show', 'works.show');
+  // app.post('/works/updata', 'works.updata');
+  // app.post('/works/URL', '');
+  app.post('/sc', 'mysql.stcreat');
+  app.post('/sd', 'mysql.stdelet');
+  app.post('/su', 'mysql.stupdat');
+  app.post('/sg', 'mysql.stge');
+  app.post('/sgs', 'mysql.stgets');
 };

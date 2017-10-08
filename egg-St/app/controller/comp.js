@@ -54,6 +54,9 @@ module.exports = app => {
     * wg() {
       this.ctx.body = yield this.ctx.helper.uget(this.ctx.request.body);
     }
+    /* photo() {
+      this.ctx.body = yield app.curl('https://www.sina.com.cn');
+    }*/
   }
   return Mysql;
 };

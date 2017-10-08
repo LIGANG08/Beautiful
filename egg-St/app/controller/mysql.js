@@ -36,6 +36,25 @@ module.exports = app => {
     * gets() {
       this.ctx.body = yield this.ctx.service.student.gets(this.ctx.request.body);
     }
+
+    * stcreat() {
+      this.ctx.body = yield this.ctx.service.st.create(this.ctx.request.body);
+    }
+    * stdelet() {
+      this.ctx.body = yield this.ctx.service.st.delete(this.ctx.request.body);
+    }
+    * stupdat() {
+      this.ctx.body = yield this.ctx.service.st.update(this.ctx.request.body);
+    }
+    * stge() {
+      this.ctx.body = yield this.ctx.service.st.get(this.ctx.request.body);
+    }
+    * stselect() {
+      this.ctx.body = yield this.ctx.service.st.select(this.ctx.request.body);
+    }
+    * stgets() {
+      this.ctx.body = yield this.ctx.service.st.gets(this.ctx.request.body);
+    }
   }
   return Mysql;
 };

@@ -4,6 +4,7 @@ const knex = require('knex')({
 });
 module.exports = app => {
   app.beforeStart(function* () {
+    const ctx = app.createAnoonymousContext();
     const hasUser = yield app.mysql.query(knex.schema.hasTable('stu').toString());
     if (hasUser.length === 0) {
       const userSchema = knex.schema.createTableIfNotExists('stu', function(table) {
@@ -14,6 +15,7 @@ module.exports = app => {
         table.charset('utf8');
       });
       yield app.mysql.query(userSchema.toString());
+      yield ctx.
     }
     const Student = yield app.mysql.query(knex.schema.hasTable('student').toString());
     if (Student.length === 0) {
