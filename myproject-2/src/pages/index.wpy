@@ -245,8 +245,8 @@ margin: 0 auto;
    </view>
    <view class = "body">
      <view class = "sex">
-       <text class = "text-g" @tap = "boy"  color = "{{color}}">送他</text>
-       <text bindtap = "girl" @tap = "girl"  color = "{{colors}}">送她</text>
+       <text class = "text-g" @tap = "boy"  style = "color: {{color}}">送他</text>
+       <text bindtap = "girl" @tap = "girl"  style = "color: {{colors}}">送她</text>
      </view>
      <view class = "shopping">
        <view class = "ia">
@@ -290,7 +290,7 @@ export default class Index extends wepy.page {
     navigationBarTitletext: '礼物说'
   }
   data = {
-    color: 'red',
+    color: 'silver',
     camera: '../pages/images/相机_.png',
     hat: '../pages/images/帽子.png',
     watch: '../pages/images/手表.png',
@@ -301,7 +301,7 @@ export default class Index extends wepy.page {
   methods = {
     boy() {
       let self = this
-      self.color = 'red'
+      self.color = 'blue'
       self.camera = '../pages/images/相机_.png'
       self.hat = '../pages/images/帽子.png'
       self.watch = '../pages/images/手表.png'
@@ -311,6 +311,7 @@ export default class Index extends wepy.page {
     },
     girl() {
       let self = this
+      self.colors = 'blue',
       self.camera = '../pages/images/相机_.png'
       self.hat = '../pages/images/首饰.png'
       self.watch = '../pages/images/化妆品.png'

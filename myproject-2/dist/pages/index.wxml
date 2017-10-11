@@ -15,8 +15,8 @@
    </view>
    <view class="body">
      <view class="sex">
-       <text class="text-g" bindtap="boy" color="{{color}}">送他</text>
-       <text bindtap="girl" color="{{colors}}">送她</text>
+       <text class="text-g" bindtap="boy" style="color: {{color}}">送他</text>
+       <text bindtap="girl" style="color: {{colors}}">送她</text>
      </view>
      <view class="shopping">
        <view class="ia">
