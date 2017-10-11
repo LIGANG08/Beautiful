@@ -1,0 +1,226 @@
+
+.wrap{
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-color:snow;
+  margin: 0 auto;
+  }
+.top{
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+.main{
+position: relative;  
+width: 220px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-left: 55px;
+margin-top: 50px;
+margin: 0 auto;
+}
+.main image{
+  width: 30px;
+  height: 30px;
+  margin-left: 40px;
+  margin-bottom: -20px;
+}  
+.text{
+  margin-top: 50px;
+  margin-left: -20px;
+  font-size: 13px;
+}
+.tp{
+  position: absolute;
+  top:10px;
+  left: 15px;
+}
+.tm{
+  position: absolute;
+  top:10px;
+  left: 85px;
+}
+.tb{
+  position: absolute;
+  top:10px;
+  left: 173px;
+}
+.images image{
+  border: 1px solid silver;
+  border-radius:30px;
+}
+.body{
+  width: 300px;
+  background-color: tomato;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin: 0 auto;
+}
+.sex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sex text{
+  margin-left:30px; 
+}
+.text-g{
+  border-bottom:2px solid black;
+}
+.sex{
+  margin-left: -40px;
+}
+.shopping{
+  position: relative;
+  width: 300px;
+  background-color:sandybrown;
+  font-size: 15px;
+}
+.images{
+  width: 120px;
+  position:absolute;
+  background-color: beige;
+  left: 50px;
+  top:-20px;
+  border-bottom: 1px solid silver;
+}
+.t{
+  position:absolute;
+  top:-15px;
+  left:-70px;
+}
+.h{
+  position:absolute;
+  top:-15px;
+  left:5px;
+}
+.g{
+  position:absolute;
+  top:-15px;
+  left:80px;
+}
+.shopping image{
+  background-color: seashell;
+   width: 40px;
+   height: 40px;
+}
+.sa{
+  position:absolute;
+  top: 10px;
+  left: 20px;
+}
+.sb{
+  position:absolute;
+  top: 10px;
+  left: 20px;
+}
+.sc{
+  position:absolute;
+  top: 10px;
+  left: 20px;
+}
+.sd{
+  position:absolute;
+  top: 10px;
+  left: 20px;
+}
+.se{
+  position:absolute;
+  top: 10px;
+  left: 20px;
+}
+.sf{
+  position:absolute;
+  top: 10px;
+  left: 25px;
+}
+.sj{
+  position:absolute;
+  top:60px;
+  left: 25px;
+}
+.sl{
+  position:absolute;
+  top:60px;
+  left: 25px;
+}
+.sg{
+  position:absolute;
+  top:60px;
+  left: 25px;
+}
+.sm{
+  position:absolute;
+  top:60px;
+  left: 25px;
+}
+.sz{
+  position:absolute;
+  top: 60px;
+  left: 25px;
+}
+.st{
+  position:absolute;
+  top: 60px;
+  left: 25px;
+}
+.bottom{
+  position:absolute;
+  top:480px;
+  left:140px ;
+}
+.aj{
+  position:absolute;
+  background-color:seashell;
+  width: 80px;
+  height: 80px;
+  top:10px;
+  left: 20px;
+}
+.bl{
+  position:absolute;
+  background-color:seashell;
+  width: 80px;
+  height: 80px;
+  top:10px;
+  left: 110px;
+}
+.cg{
+  position:absolute;
+  background-color:seashell;
+  width: 80px;
+  height: 80px;
+  top:10px;
+  left: 200px;
+}
+.dm{
+  position:absolute;
+  background-color:seashell;
+  width: 80px;
+  height: 80px;
+  top:100px;
+  left: 20px;
+}
+.ez{
+  position:absolute;
+  background-color:seashell;
+  width: 80px;
+  height: 80px;
+  top:100px;
+  left: 110px;
+}
+.ft{
+  position:absolute;
+  background-color:seashell;
+  width: 80px;
+  height: 80px;
+  top:100px;
+  left: 200px;
+}

@@ -2,8 +2,8 @@
   <view class="con">
     <view class="logo">
      <text>自我介绍</text>
-     <image class="images" src="../images/a.jpg"/>
     </view>
+     <image class="images" src="../images/a.jpg"/>
     <view class="wrap">
       <text>姓名：</text>
       <text>性别：</text>
@@ -23,6 +23,46 @@
     <checkbox/>韩国
     <checkbox/>西班牙
     
-    <button class="regist">注册</button>
-    <button class="login" type="warn">登录</button>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section section_gap">
+    <view class="section__title">switch</view>
+    <switch name="switch"/>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">slider</view>
+    <slider name="slider" show-value/>
+  </view>
+
+  <view class="section">
+    <view class="section__title">input</view>
+    <input name="input" placeholder="please input here"/>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">radio</view>
+    <radio-group name="radio-group">
+      <label><radio value="radio1"/>a</label>
+      <label><radio value="radio2"/>b</label>
+    </radio-group>
+  </view>
+  <view class="section section_gap">
+    <view class="section__title">checkbox</view>
+    <checkbox-group name="checkbox">
+      <label><checkbox value="checkbox1"/>是</label>
+      <label><checkbox value="checkbox2"/>否</label>
+    </checkbox-group>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+    <button formType="reset">重置</button>
+  </view>
+  </form>
+  <view class="video">
+    <video src="{{src}}"/>
+    <button bindtap="binButtonTap">获取视频</button>
+  </view>
+  <view class="imgage">
+    <image src="{{src}}"/>
+    <button bindtap="image">获取图片</button>
+  </view>
+
   </view>

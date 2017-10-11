@@ -1,0 +1,40 @@
+
+  <view class="wrap">
+    <view class="logo">
+      <text>简单2步，选择心动好礼</text>
+    </view>
+    <view class="top">
+      <image class="top-a" style="background-image:url('../images/头像-2.png')"/>
+      <text>送给TA</text>
+      <image class="top-b" style="background-image:url('../images/b.jpg')"/>
+      <text>TA喜欢的</text>
+      <image class="top-c" style="background-image:url('../images/a.jpg')"/>
+      <text>完成</text>
+    </view>
+    <button class="girl">送她</button>
+    <button class="boy">送他</button>
+    <view class="body">
+      <vie class="ia">
+      <image class="pa" src="../images/相机.png"/>
+      
+      <view class="ib">
+      <image class="pb" src="../images/首饰.png"/>
+      <view>
+      <view class="ic">
+      <image class="pc" src="../images/化妆品.png"/>
+      </view>
+      <view class="id">
+      <image class="pd" src="../images/妈妈良品.png"/>
+      </view>
+      <view class="ie">
+      <image class="pe" src="../images/外套.png"/>
+      </view>
+      <view class="if">
+      <image class="pf" src="../images/钱包.png"/>
+      </view>
+    </view>
+    <view class="foot">
+      <text>先跳过，随便逛逛>></text>
+    </view>
+  </view>
+</vie></view></view>

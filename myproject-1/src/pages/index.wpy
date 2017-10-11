@@ -1,0 +1,50 @@
+<style>
+video {
+  margin-top: 70px;
+  margin-left: 6px;
+}
+</style>
+
+<template>
+  <view>
+    <view class="video">
+      <video src="{{src}}"></video>
+      <button bindtap="video">获取视频</button>
+    </view>
+    <view class="image">
+      <image src="{{src}}"></image>
+      <button bindtap="image">获取图片</button>
+    </view>
+    <view class="music">
+      <audio src="{{src}}"></audio>
+      <button type="primary" bindtap="audioPlay">播放</button>
+      <button type="primary" bindtap="audioPause">暂停</button>
+      <button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+      <button type="primary" bindtap="audioStart">回到开头</button>
+    </view>
+  </view>
+</template>
+
+<script>
+import wepy from 'wepy'
+export default class Index extends wepy.page {
+  config = {
+    navigationBarTitletext: 'weChat'
+  }
+
+    methods = {
+       audioPlay() {
+    this.audioCtx.play()
+       },
+      audioPause() {
+    this.audioCtx.pause()
+       },
+      audio14() {
+    this.audioCtx.seek(14)
+      },
+      audioStart() {
+    this.audioCtx.seek(0)
+      }
+}
+
+</script>

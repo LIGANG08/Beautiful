@@ -1,0 +1,212 @@
+<style lang="less">
+.wrap{
+  background-color:darkgrey;
+  padding-top: 10px;
+}
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  font-family: "黑体"
+}
+.top-a{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 70px;
+  border-radius:15px; 
+}
+.top-b{
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 90px;
+  border-radius:15px;
+  padding-top: 0px;  
+}
+.top-c{
+  width: 30px;
+  height: 30px;
+  margin-top: -90px;
+  margin-left: 210px;
+  border-radius:15px;
+}
+.top{
+  position: relative;
+  border-bottom: 1px solid black;
+  height: 45px;
+}
+.top text{
+  color:aqua;
+  font-size: 15px;
+}
+.girl{
+  width: 30px;
+  height: 30px;
+}
+.boy{
+  width: 30px;
+  height: 30px;
+  font-size: 10px;
+}
+.body{
+  width: 800px;
+  height: 450px;
+  border-top: 2px solid black;
+  margin-top: 100px;
+  position: relative;
+  padding-top: 0px;
+}
+.ia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:azure;
+  font-size: 20px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.ib{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:azure;
+  font-size: 20px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 112px;
+}
+.ic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:azure;
+  font-size: 20px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 212px;
+}
+.id{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:azure;
+  font-size: 20px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 12px;
+}
+.ie{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:azure;
+  font-size: 20px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 112px;
+}
+.if{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:azure;
+  font-size: 20px;
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 212px;
+}   
+.pa{
+  width: 30px;
+  height: 30px;
+}
+.pb{
+ width: 30px;
+ height: 30px;
+}
+.pc{
+  width: 30px;
+  height: 30px;
+}
+.pd{
+  width: 30px;
+  height: 30px;
+}
+.pe{
+  width: 30px;
+  height: 30px;
+}
+.pf{
+  width: 30px;
+  height: 30px;
+}
+.foot{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+}
+  
+</style>
+<template>
+  <view class = "wrap">
+    <view class = "logo">
+      <text>简单2步，选择心动好礼</text>
+    </view>
+    <view class = "top">
+      <image class = "top-a" style="background-image:url('../images/头像-2.png')"/>
+      <text>送给TA</text>
+      <image class = "top-b" style="background-image:url('../images/b.jpg')"/>
+      <text>TA喜欢的</text>
+      <image class = "top-c" style="background-image:url('../images/a.jpg')"/>
+      <text>完成</text>
+    </view>
+    <button class = "girl">送她</button>
+    <button class = "boy">送他</button>
+    <view class = "body">
+      <vie class = "ia">
+      <image class = "pa" src = "../images/相机.png"/>
+      </view>
+      <view class = "ib">
+      <image class = "pb" src = "../images/首饰.png"/>
+      <view>
+      <view class = "ic">
+      <image class = "pc" src = "../images/化妆品.png"/>
+      </view>
+      <view class = "id">
+      <image class = "pd" src = "../images/妈妈良品.png"/>
+      </view>
+      <view class = "ie">
+      <image class = "pe" src = "../images/外套.png"/>
+      </view>
+      <view class = "if">
+      <image class = "pf" src = "../images/钱包.png"/>
+      </view>
+    </view>
+    <view class = "foot">
+      <text>先跳过，随便逛逛>></text>
+    </view>
+  </view>
+</template>

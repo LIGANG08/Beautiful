@@ -1,0 +1,18 @@
+
+  <view>
+    <view class="video">
+      <video src="{{src}}"/>
+      <button bindtap="video">获取视频</button>
+    </view>
+    <view class="image">
+      <image src="{{src}}"/>
+      <button bindtap="image">获取图片</button>
+    </view>
+    <view class="music">
+      <audio src="{{src}}"/>
+      <button type="primary" bindtap="audioPlay">播放</button>
+      <button type="primary" bindtap="audioPause">暂停</button>
+      <button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+      <button type="primary" bindtap="audioStart">回到开头</button>
+    </view>
+  </view>

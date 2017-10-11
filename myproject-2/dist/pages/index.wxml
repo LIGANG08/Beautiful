@@ -1,0 +1,53 @@
+
+  <view class="wrap">
+   <view class="top">简单2步，选中心动好礼</view>
+   <view class="main">
+    <view class="images">
+      <image class="t" src="../pages/images/头像-2.png"/>
+      <image class="h" src="../pages/images/化妆品.png"/>
+      <image class="g" src="../pages/images/勾选-2.png"/>
+    </view>
+    <view class="text">
+      <text class="tp">送给TA</text>
+      <text class="tm">TA喜欢的</text>
+      <text class="tb">完成</text>
+    </view>
+   </view>
+   <view class="body">
+     <view class="sex">
+       <text class="text-g" bindtap="boy" color="{{color}}">送他</text>
+       <text bindtap="girl" color="{{colors}}">送她</text>
+     </view>
+     <view class="shopping">
+       <view class="ia">
+           <view class="aj">
+            <image class="sa" src="{{camera}}"/>
+            <text class="sj">自己</text> 
+           </view>
+           <view class="bl">
+            <image class="sb" src="{{hat}}"/>
+            <text class="sl">老公</text> 
+           </view>
+           <view class="cg">
+           <image class="sc" src="{{watch}}"/>
+           <text class="sg">兄弟</text> 
+           </view>
+       </view>  
+       <view class="ib"> 
+           <view class="dm">
+           <image class="sd" src="{{glasses}}"/>
+           <text class="sm">爸爸</text> 
+           </view>
+           <view class="ez">
+           <image class="se" src="{{coat}}"/>
+           <text class="sz">长辈</text>
+           </view>
+           <view class="ft">
+           <image class="sf" src="{{billfold}}"/>
+           <text class="st">同事</text>
+           </view>
+       </view>    
+     </view>
+   </view>
+   <view class="bottom">先跳过，随便逛逛></view> 
+  </view>
