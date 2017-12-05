@@ -1,6 +1,6 @@
 /**
  * 
- * 2017-09-22
+ * ligang
  */
 const dove = require('./dove');
 const chicken = require('./chicken');

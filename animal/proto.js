@@ -1,4 +1,4 @@
-/*var Amine = Object.create(null,{
+var Amine = Object.create(null,{
     str: {
         enumerable: false,
         writable: true,
@@ -32,7 +32,7 @@ console.log(obj.str);
 console.log(Amine);
 console.log(Amine.str);
 console.log(Amine.__proto__ === Object.prototype);
-console.log(obj.__proto__ === Object.prototype);*/
+console.log(obj.__proto__ === Object.prototype);
 
 
 /*-----------Animal-----------*/
