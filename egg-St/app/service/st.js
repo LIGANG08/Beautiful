@@ -1,6 +1,6 @@
 /**
  * 
- * 2017-10-07 ligang
+ * ligang
  */
 
 'use strict';
